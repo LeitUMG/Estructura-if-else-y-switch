@@ -1,6 +1,6 @@
 # ESTRUCTURA if-else Y switch
 
-## \_Operadores de Comparación\_
+## \_Operadores\_ \_De\_ \_Comparación\_
 Al tener la opción de if se puede utilizar para comparaciones con variables o datos que se vayan a utilizar.
 
 #### Ejemplo:
@@ -16,7 +16,7 @@ Al tener la opción de if se puede utilizar para comparaciones con variables o d
 * "||"  (OR Lógico) - Al menos una condición debe ser verdadera.
 * "!"   (NOT Lógico) - Invierte el valo booleano de una condición.
 
-## \_Estructura if-else\_
+## \_Estructura\_ \_if-else\_
 La estructura if-else en C++ es una herramienta fundamental para tomar decisiones en el código. Permite al programa ejecutar diferentes bloques de código dependiendo de si una condición es verdadera o falsa.
 
 Funciona de la siguiente forma:
@@ -77,7 +77,7 @@ int main() {
 ```
 En este ejemplo básico la *condición* es *calificacion >= 61.0*. Si la calificación es 61.0 o más el estudiante aprueba el curso.
 
-## \_Estructura if sin else\_
+## \_Estructura\_ \_if\_ \_Sin\_ \_else\_
 Se puede utilizar una estructura *if* sin un bloque *else* si solo se necesita ejecutar un código cuando la condición es verdadera y no hay nada específico que hacer cuando es falsa.
 
 #### Ejemplo de sintaxis:
@@ -106,7 +106,7 @@ int main() {
 }
 ```
 
-## \_Almacenamiento if-else\_
+## \_Almacenamiento\_ \_if-else\_
 Se puede encadenar múltiples condiciones utilizando *else if*. Esto permite evaluar varias condiciones en secuencia. Una vez que una condición es verdadera, su bloque de código se ejecuta y el resto de la cadena *else if-else* se salta.
 
 #### Ejemplo de sintaxis:
@@ -147,7 +147,7 @@ int main() {
 }
 ```
 
-## \_Estructura switch\_
+## \_Estructura\_ \_switch\_
 
 La estructura **switch** es una declaración de control de selección que permite que una variable o expresión sea evaluada contra una lista de valores. Es una alternativa más limpia y eficiente al uso de múltiples declaraciones **if-else if-else** cuando se tiene que tomar decisiones basadas en diferentes valores que puede tomar una sola variable.
 
