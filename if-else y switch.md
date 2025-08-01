@@ -15,7 +15,7 @@ Funciona de la siguiente forma:
     // Código que se ejecuta si la condición es verdadera
 } else {
     // Código que se ejecuta si la condición es falsa
-}
+}```
 
 * 
 
