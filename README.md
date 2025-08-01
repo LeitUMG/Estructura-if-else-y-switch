@@ -1,6 +1,6 @@
 # ESTRUCTURA if-else Y switch
 
-## \_Operadores\_ \_De\_ \_Comparación\_
+## ------Operadores------ ------De\_ \_Comparación------
 Al tener la opción de if se puede utilizar para comparaciones con variables o datos que se vayan a utilizar.
 
 #### Ejemplo:
