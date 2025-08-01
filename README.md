@@ -27,7 +27,8 @@ Funciona de la siguiente forma:
 
 #### Ejemplo de sintaxis:
 
-```if (condicion) {
+```
+if (condicion) {
     // Código que se ejecuta si la condición es verdadera
 } else {
     // Código que se ejecuta si la condición es falsa
@@ -38,7 +39,8 @@ Funciona de la siguiente forma:
 * **Las Llaves {}**: definen los bloques de código. Si solo hay una línea de código dentro del *if* o *else*, las llavesesson opcionales, pero es una buena práctica usarlas siempre para una mayor claridad del proceso que se realiza y evitar errores.
 
 #### Ejemplo 1: Validar si un número ingresado es par o impar
-```#include <iostream>
+```
+#include <iostream>
 using namespace std;
 int main() {
     int n1;
@@ -57,7 +59,8 @@ En este  ejemplo básico, la *condición* es *n1 % 2 == 0*. El operador utilizad
 
 #### Ejemplo 2: Validar si un estudiante aprobó o reprobó
 
-```#include <iostream>
+```
+#include <iostream>
 using namespace std;
 int main() {
     double calificacion;
@@ -79,7 +82,8 @@ Se puede utilizar una estructura *if* sin un bloque *else* si solo se necesita e
 
 #### Ejemplo de sintaxis:
 
-```if (condicion) {
+```
+if (condicion) {
     // Código que se ejecuta si la condición es verdadera
 }
 // El programa continúa aquí, independientemente de la condición.
@@ -87,7 +91,8 @@ Se puede utilizar una estructura *if* sin un bloque *else* si solo se necesita e
 
 #### Ejemplo 1: Brindar una bienvenida solo si el usuario es el administrador
 
-```#include <iostream>
+```
+#include <iostream>
 #include <string>
 using namespace std;
 int main() {
@@ -106,7 +111,8 @@ Se puede encadenar múltiples condiciones utilizando *else if*. Esto permite eva
 
 #### Ejemplo de sintaxis:
 
-```if (condicion1) {
+```
+if (condicion1) {
     // Código si condicion1 es verdadera
 } else if (condicion2) {
     // Código si condicion2 es verdadera (y condicion1 fue falsa)
@@ -119,7 +125,8 @@ Se puede encadenar múltiples condiciones utilizando *else if*. Esto permite eva
 
 #### Ejemplo 1: Calificar Jugador con respecto a una letra
 
-```#include <iostream>
+```
+#include <iostream>
 using namespace std;
 int main() {
     int score;
