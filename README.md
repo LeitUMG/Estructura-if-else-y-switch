@@ -146,3 +146,82 @@ int main() {
     return 0;
 }
 ```
+
+## Estructura switch
+
+La estructura **switch** es una declaración de control de selección que permite que una variable o expresión sea evaluada contra una lista de valores. Es una alternativa más limpia y eficiente al uso de múltiples declaraciones **if-else if-else** cuando se tiene que tomar decisiones basadas en diferentes valores que puede tomar una sola variable.
+
+**¿Cómo funciona al estructura switch?**
+
+1. **Expresión de switch**: Se evalúa una expresión, que puede ser una variable de tipo entero, carácter o enumeración.
+2. **Case**: El valor de la expresión de *switch* se compara con los valores especificados en cada *case*.
+3. **Coincidencia**: Si el valor de la expresión coincide con un valor de *case*, el código dentro de ese *case* se ejecuta.
+4. **Break**: Se coloca esta palabra de forma obligatoria, ya que define hasta donde finaliza el *case*. Detiene la ejecución del *switch* una vez que se encuentra una coincidencia y el código de ese *case* ha terminado. Si no se coloca *break*, la ejecución caerá al siguiente *case* (esto es conocido como "fall-through"), ejecutando el código de los *case* subsiguientes hasta que encuentra un *break* o el final del *switch*.
+5. **Default**: Esta condición es opcional. Si ninguno de los valores del *case* coincide con la expresión de *switch*, el código dentro del bloque *default* se ejecuta. Es similar a la cláusula *else* en un *if-else if*.
+
+#### Ejemplo de sintaxis:
+```
+switch (expresion) {
+    case valor1:
+        // Código a ejecutar si expresion == valor1
+        break;
+    case valor2:
+        // Código a ejecutar si expresion == valor2
+        break;
+    case valor3:
+        // Código a ejecutar si expresion == valor3
+        break;
+    // ... más casos
+    default:
+        // Código a ejecutar si ninguno de los casos anteriores coincide
+        break; // Opcional si es el último bloque
+}
+```
+
+* **Expresión**: Debe ser un tipo entero, carácter, enumeración o un tipó de clase que tenga un operador de conversación a un tipo entero. No puede ser un tipo de punto flotante (float, double).
+* **valor1, valor2, valor3:**: Deben ser constantes o expresiones constantes literales. No pueden ser variables.
+
+#### Ejemplo 1: Menú de opciones simples
+```
+#include <iostream>
+using namespace std;
+int main() {
+    int opcion;
+    cout << "Seleccione una opción:" << endl;
+    cout << "1. Abrir archivo" << endl;
+    cout << "2. Guardar archivo" << endl;
+    cout << "3. Imprimir documento" << endl;
+    cout << "4. Salir" << endl;
+    cout << "Ingrese su opción: ";
+    cin >> opcion;
+    switch (opcion) {
+        case 1:
+            cout << "Abriendo archivo..." << endl;
+            // Aquí iría el código para abrir un archivo
+            break;
+        case 2:
+            cout << "Guardando archivo..." << endl;
+            // Aquí iría el código para guardar un archivo
+            break;
+        case 3:
+            cout << "Imprimiendo documento..." << endl;
+            // Aquí iría el código para imprimir
+            break;
+        case 4:
+            cout << "Saliendo del programa. ¡Hasta luego!" << endl;
+            break;
+        default:
+            cout << "Opción no válida. Por favor, intente de nuevo." << endl;
+            break;
+    }
+    return 0;
+}
+```
+**EXPLICACIÓN DEL EJEMPLO***
+* El usuario ingresa un número.
+* La viriable opçion se evalúa en el switch.
+* Si *opcion* es 1, se ejecuta el código del *case 1* y luego con *break* sale del *switch*.
+* Si *opcion* es 2, se ejecuta el código del *case 2* y así sucesivamente.
+* Si el ususario ingresa un número que no es 1, 2, 3 o 4 se ejecuta el bloque de *default*.
+
+
