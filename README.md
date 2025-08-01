@@ -101,21 +101,6 @@ int main() {
 }
 ```
 
-#### Ejemplo 2: Brindar una bienvenida solo si el usuario es el administrador
-
-```#include <iostream>
-#include <string>
-using namespace std;
-int main() {
-    string rolUsuario = "admin"; // Podría venir de una base de datos o entrada de usuario
-    if (rolUsuario == "admin") {
-        cout << "Bienvenido, Administrador del sistema." << endl;
-    }
-    cout << "Accediendo al panel de control..." << endl; // Se ejecuta siempre
-    return 0;
-}
-```
-
 ## Almacenamiento if-else
 Se puede encadenar múltiples condiciones utilizando *else if*. Esto permite evaluar varias condiciones en secuencia. Una vez que una condición es verdadera, su bloque de código se ejecuta y el resto de la cadena *else if-else* se salta.
 
@@ -132,13 +117,13 @@ Se puede encadenar múltiples condiciones utilizando *else if*. Esto permite eva
 }
 ```
 
-#### Ejemplo 1: Calificar con respecto a una letra
+#### Ejemplo 1: Calificar Jugador con respecto a una letra
 
 ```#include <iostream>
 using namespace std;
 int main() {
     int score;
-    cout << "Ingresa tu puntuación (0-100): ";
+    cout << "Jugador, ingresa tu puntuación (0-100): ";
     cin >> score;
     if (score >= 90) {
         cout << "Tu calificación es A" << endl;
