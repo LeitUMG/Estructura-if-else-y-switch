@@ -179,7 +179,7 @@ switch (expresion) {
 ```
 
 * **Expresión**: Debe ser un tipo entero, carácter, enumeración o un tipó de clase que tenga un operador de conversación a un tipo entero. No puede ser un tipo de punto flotante (float, double).
-* **valor1, valor2, valor3:**: Deben ser constantes o expresiones constantes literales. No pueden ser variables.
+* **valor1, valor2, valor3**: Deben ser constantes o expresiones constantes literales. No pueden ser variables.
 
 #### Ejemplo 1: Menú de opciones simples
 ```
@@ -217,7 +217,7 @@ int main() {
     return 0;
 }
 ```
-**EXPLICACIÓN DEL EJEMPLO***
+**EXPLICACIÓN DEL EJEMPLO**
 * El usuario ingresa un número.
 * La viriable opçion se evalúa en el switch.
 * Si *opcion* es 1, se ejecuta el código del *case 1* y luego con *break* sale del *switch*.
