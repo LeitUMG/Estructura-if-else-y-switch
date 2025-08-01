@@ -1,5 +1,17 @@
 # ESTRUCTURA if-else Y switch
 
+## Operadores de Comparación
+Al tener la opción de if se puede utilizar para comparaciones con variables o datos que se vayan a utilizar.
+
+#### Ejemplo:
+
+* "<"     Significa menor que 
+* ">"     Significa mayor que
+* "!="    Significa diferente a
+* "=="    Significa igual a
+* "<="    Significa menor o igual a
+* ">="    Significa mayor o igual a
+
 ## Estructura if-else
 La estructura if-else en C++ es una herramienta fundamental para tomar decisiones en el código. Permite al programa ejecutar diferentes bloques de código dependiendo de si una condición es verdadera o falsa.
 
@@ -23,8 +35,8 @@ Funciona de la siguiente forma:
 
 #### Ejemplo 1: Validar si un número ingresado es par o impar
 ```#include <iostream>
+using namespace std;
 int main() {
-    using namespace std;
     int n1;
     cout << "Ingresa un número: ";
     cin >> numero;
@@ -42,8 +54,8 @@ En este  ejemplo básico, la *condición* es *n1 % 2 == 0*. El operador utilizad
 #### Ejemplo 2: Validar si un estudiante aprobó o reprobó
 
 ```#include <iostream>
+using namespace std;
 int main() {
-    using namespace std;
     double calificacion;
     cout << "Ingresa la calificación del estudiante: ";
     cin >> calificacion;
@@ -58,19 +70,30 @@ int main() {
 ```
 En este ejemplo básico la *condición* es *calificacion >= 61.0*. Si la calificación es 61.0 o más el estudiante aprueba el curso.
 
+## Estructura if sin else
+Se puede utilizar una estructura *if* sin un bloque *else* si solo se necesita ejecutar un código cuando la condición es verdadera y no hay nada específico que hacer cuando es falsa.
 
+#### Ejemplo de sintaxis:
 
+```if (condicion) {
+    // Código que se ejecuta si la condición es verdadera
+}
+// El programa continúa aquí, independientemente de la condición.
+```
 
+#### Ejemplo 1: Brindar una bienvenida solo si el usuario es el administrador
 
-## Operadores de Comparación
+```#include <iostream>
+#include <string>
+using namespace std;
 
-Al tener la opción de if se puede utilizar para comparaciones con variables o datos que se vayan a utilizar.
+int main() {
+    string rolUsuario = "admin"; // Podría venir de una base de datos o entrada de usuario
 
-#### Ejemplo:
-
-* "<"     Significa menor que 
-* ">"     Significa mayor que
-* "!="    Significa diferente a
-* "=="    Significa igual a
-* "<="    Significa menor o igual a
-* ">="    Significa mayor o igual a
+    if (rolUsuario == "admin") {
+        cout << "Bienvenido, Administrador del sistema." << endl;
+    }
+    cout << "Accediendo al panel de control..." << endl; // Se ejecuta siempre
+    return 0;
+}
+```
