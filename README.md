@@ -4,13 +4,17 @@
 Al tener la opción de if se puede utilizar para comparaciones con variables o datos que se vayan a utilizar.
 
 #### Ejemplo:
-
-* "<"     Significa menor que 
-* ">"     Significa mayor que
-* "!="    Significa diferente a
-* "=="    Significa igual a
-* "<="    Significa menor o igual a
-* ">="    Significa mayor o igual a
+**Operadores de Compilacón**
+* "<"  -  Significa menor que.
+* ">"  - Significa mayor que.
+* "!=" - Significa diferente a.
+* "==" - Significa igual a.
+* "<=" - Significa menor o igual a.
+* ">=" - Significa mayor o igual a.
+**Operadores Lógicos**
+* "&&"  (AND Lógico) - Ambas condiciones tienen que ser verdaderas.
+* "||"  (OR Lógico) - Al menos una condición debe ser verdadera.
+* "!"   (NOT Lógico) - Invierte el valo booleano de una condición.
 
 ## Estructura if-else
 La estructura if-else en C++ es una herramienta fundamental para tomar decisiones en el código. Permite al programa ejecutar diferentes bloques de código dependiendo de si una condición es verdadera o falsa.
@@ -86,7 +90,6 @@ Se puede utilizar una estructura *if* sin un bloque *else* si solo se necesita e
 ```#include <iostream>
 #include <string>
 using namespace std;
-
 int main() {
     string rolUsuario = "admin"; // Podría venir de una base de datos o entrada de usuario
 
@@ -94,6 +97,60 @@ int main() {
         cout << "Bienvenido, Administrador del sistema." << endl;
     }
     cout << "Accediendo al panel de control..." << endl; // Se ejecuta siempre
+    return 0;
+}
+```
+
+#### Ejemplo 2: Brindar una bienvenida solo si el usuario es el administrador
+
+```#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string rolUsuario = "admin"; // Podría venir de una base de datos o entrada de usuario
+    if (rolUsuario == "admin") {
+        cout << "Bienvenido, Administrador del sistema." << endl;
+    }
+    cout << "Accediendo al panel de control..." << endl; // Se ejecuta siempre
+    return 0;
+}
+```
+
+## Almacenamiento if-else
+Se puede encadenar múltiples condiciones utilizando *else if*. Esto permite evaluar varias condiciones en secuencia. Una vez que una condición es verdadera, su bloque de código se ejecuta y el resto de la cadena *else if-else* se salta.
+
+#### Ejemplo de sintaxis:
+
+```if (condicion1) {
+    // Código si condicion1 es verdadera
+} else if (condicion2) {
+    // Código si condicion2 es verdadera (y condicion1 fue falsa)
+} else if (condicion3) {
+    // Código si condicion3 es verdadera (y condicion1 y condicion2 fueron falsas)
+} else {
+    // Código si ninguna de las condiciones anteriores es verdadera
+}
+```
+
+#### Ejemplo 1: Calificar con respecto a una letra
+
+```#include <iostream>
+using namespace std;
+int main() {
+    int score;
+    cout << "Ingresa tu puntuación (0-100): ";
+    cin >> score;
+    if (score >= 90) {
+        cout << "Tu calificación es A" << endl;
+    } else if (score >= 80) {
+        cout << "Tu calificación es B" << endl;
+    } else if (score >= 70) {
+        cout << "Tu calificación es C" << endl;
+    } else if (score >= 60) {
+        cout << "Tu calificación es D" << endl;
+    } else {
+        cout << "Tu calificación es F" << endl;
+    }
     return 0;
 }
 ```
